@@ -1,0 +1,22 @@
+.hero-bg {
+  background-image: url(/src/assets/zoominfo-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-tag {
+  font-size: clamp(3rem, 1rem + 10vw, 7rem);
+  font-weight: 600;
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.container-nav {
+  padding: 0 1rem;
+  max-width: 100rem;
+  margin: 0 auto;
+}
