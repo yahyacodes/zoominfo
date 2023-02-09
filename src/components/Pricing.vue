@@ -29,7 +29,10 @@
               Make every sales interaction count with conversation Intelligence
             </p>
 
-            <a href="#" class="text-red-600 text-lg">Learn more about Chorus</a>
+            <a href="#" class="text-red-600 text-lg">
+              Learn more about Chorus
+              <fa icon="arrow-right" class="text-red-600" />
+            </a>
           </div>
         </div>
 
@@ -49,7 +52,10 @@
               "Increase conversations with data-powered website chat.
             </p>
 
-            <a href="#" class="text-red-600 text-lg">Learn more about Chat</a>
+            <a href="#" class="text-red-600 text-lg">
+              Learn more about Chat
+              <fa icon="arrow-right" class="text-red-600" />
+            </a>
           </div>
         </div>
 
@@ -69,7 +75,10 @@
               Reach more buyers with insight-driven phone and email automation.
             </p>
 
-            <a href="#" class="text-red-600 text-lg">Learn more about Enage</a>
+            <a href="#" class="text-red-600 text-lg">
+              Learn more about Enage
+              <fa icon="arrow-right" class="text-red-600" />
+            </a>
           </div>
         </div>
       </div>

@@ -32,7 +32,10 @@
               dertermined to crush quotes.
             </p>
 
-            <a href="#" class="text-red-600 text-lg">Hit Your Number</a>
+            <a href="#" class="text-red-600 text-lg">
+              Hit Your Number
+              <fa icon="arrow-right" class="text-red-600" />
+            </a>
           </div>
         </div>
 
@@ -55,7 +58,10 @@
               turn leads into pipeline.
             </p>
 
-            <a href="#" class="text-red-600 text-lg">Accelerate Your ROI</a>
+            <a href="#" class="text-red-600 text-lg">
+              Accelerate Your ROI
+              <fa icon="arrow-right" class="text-red-600" />
+            </a>
           </div>
         </div>
 
@@ -78,9 +84,10 @@
               focused on solving hiring needs
             </p>
 
-            <a href="#" class="text-red-600 text-lg"
-              >Reach Qualified Candidates</a
-            >
+            <a href="#" class="text-red-600 text-lg">
+              Reach Qualified Candidates
+              <fa icon="arrow-right" class="text-red-600" />
+            </a>
           </div>
         </div>
 
@@ -103,7 +110,10 @@
               digital go-to-market strategies to life.
             </p>
 
-            <a href="#" class="text-red-600 text-lg">Hit Your Number</a>
+            <a href="#" class="text-red-600 text-lg">
+              Discover Data-as-a-Service
+              <fa icon="arrow-right" class="text-red-600" />
+            </a>
           </div>
         </div>
       </div>
