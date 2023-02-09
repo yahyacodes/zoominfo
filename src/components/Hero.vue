@@ -1,9 +1,9 @@
 <template>
-  <section class="hero-bg py-40">
+  <section class="hero-bg py-28">
     <div>
       <Navbar />
     </div>
-    <div class="container text-center py-60">
+    <div class="container text-center">
       <h1 class="font-bold text-4xl text-white header-tag leading-none">
         It's Our Business to Grow Yours<span class="text-red-700">.</span>
       </h1>
@@ -39,7 +39,7 @@
         <h1 class="text-white">TRUSTED BY 30,000+ BUSINESSES</h1>
       </div>
 
-      <div class="mx-auto flex flex-wrap mt-10">
+      <div class="mx-auto ml-40 flex flex-wrap mt-10">
         <div
           class="w-full text-center md:w-1/2 lg:w-1/2 xl:w-1/4 lg:px-8 mb-20 lg:mb-0"
         >
@@ -50,6 +50,12 @@
           class="w-full text-center md:w-1/2 lg:w-1/2 xl:w-1/4 lg:px-8 mb-20 lg:mb-0"
         >
           <img src="../assets/paypal-logo-removebg-preview.png" alt="" />
+        </div>
+
+        <div
+          class="w-full text-center md:w-1/2 lg:w-1/2 xl:w-1/4 lg:px-8 mb-20 lg:mb-0"
+        >
+          <img src="../assets/unilever-2-logo-01-01.png" alt="" />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@
     >
       <a href="https://flowbite.com/" class="flex items-center">
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="../assets/zoominfo-logo-vector.png"
           class="h-6 mr-3 sm:h-9"
           alt="Flowbite Logo"
         />

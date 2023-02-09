@@ -1,5 +1,5 @@
 .hero-bg {
-  background-image: url(/src/assets/zoominfo-hero.png);
+  background-image: url(/src/assets/redone-hero-01.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -9,9 +9,14 @@
   font-weight: 600;
 }
 
+.name-tag {
+  font-size: clamp(3rem, 1rem + 10vw, 4rem);
+  font-weight: 600;
+}
+
 .container {
   padding: 0 1rem;
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
