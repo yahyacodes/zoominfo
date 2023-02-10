@@ -25,11 +25,11 @@
                 <h1 class="text-4xl font-bold">Chorus</h1>
               </div>
             </div>
-            <p class="text-lg text-gray-800 font-body">
+            <p class="text-md text-gray-800 font-body">
               Make every sales interaction count with conversation Intelligence
             </p>
 
-            <a href="#" class="text-red-600 text-lg">
+            <a href="#" class="text-red-600 text-md">
               Learn more about Chorus
               <fa icon="arrow-right" class="text-red-600" />
             </a>
@@ -48,11 +48,11 @@
                 <h1 class="text-4xl font-bold">Chat</h1>
               </div>
             </div>
-            <p class="text-lg text-gray-800 font-body">
+            <p class="text-md text-gray-800 font-body">
               "Increase conversations with data-powered website chat.
             </p>
 
-            <a href="#" class="text-red-600 text-lg">
+            <a href="#" class="text-red-600 text-md">
               Learn more about Chat
               <fa icon="arrow-right" class="text-red-600" />
             </a>
@@ -71,11 +71,11 @@
                 <h1 class="text-4xl font-bold">Enage</h1>
               </div>
             </div>
-            <p class="text-lg text-gray-800 font-body">
+            <p class="text-md text-gray-800 font-body">
               Reach more buyers with insight-driven phone and email automation.
             </p>
 
-            <a href="#" class="text-red-600 text-lg">
+            <a href="#" class="text-red-600 text-md">
               Learn more about Enage
               <fa icon="arrow-right" class="text-red-600" />
             </a>
