@@ -31,3 +31,14 @@
   max-width: 100rem;
   margin: 0 auto;
 }
+
+nav {
+  z-index: 10;
+}
+
+nav.scrolled {
+  @apply shadow-2xl;
+  background-color: #fff;
+  border-bottom: 0px;
+  color: black;
+}
