@@ -17,7 +17,7 @@
       <div class="flex md:order-2">
         <button
           type="button"
-          class="text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+          class="text-white bg-red-700 rounded-full border-none mx-2 font-medium text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
         >
           Get started
         </button>
@@ -56,23 +56,31 @@
               href="#"
               class="block py-2 pl-3 pr-4 text-white md:p-0"
               aria-current="page"
-              >Home</a
+              >Solutions
+              <fa icon="chevron-down" class="h-2 mx-2" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
+              >Plaform
+              <fa icon="chevron-down" class="h-2 mx-2" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
+              >Pricing</a
             >
           </li>
           <li>
             <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
-              >About</a
+              >Our Data</a
             >
           </li>
           <li>
             <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
-              >Contact</a
-            >
+              >Resources
+              <fa icon="chevron-down" class="h-2 mx-2" />
+            </a>
           </li>
         </ul>
       </div>
