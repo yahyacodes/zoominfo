@@ -1,7 +1,7 @@
 <template>
   <nav
-    :class="{ scrolled: !view.atTopOfPage }"
-    class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0"
+    class="px-2 bg-white shadow-2xl sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0"
+    :class="{ 'sm:bg-transparent sm:shadow-none': !showWhiteBg }"
   >
     <div
       class="container-nav flex flex-wrap items-center justify-between mx-auto"
@@ -13,7 +13,8 @@
           alt="Flowbite Logo"
         />
         <span
-          class="self-center text-xl text-white font-semibold whitespace-nowrap"
+          class="self-center text-xl font-semibold whitespace-nowrap"
+          :class="{ 'text-white': !showWhiteBg }"
           >zoominfo</span
         >
       </a>
@@ -55,33 +56,83 @@
         <ul
           class="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
         >
+          <li
+            class="group relative px-4 text-white cursor-pointer"
+            :class="{ 'text-white': !showWhiteBg }"
+          >
+            Solutions
+            <fa icon="chevron-down" class="h-2 mx-2" />
+            <div
+              class="group-hover:block absolute hidden top-8 bg-white shadow p-5 rounded-2xl"
+            >
+              <div class="w-full md:w-1/2 2xl:w-1/2 lg:w-1/2 px-3 mb-6">
+                <div class="p-8 bg-white rounded-2xl border border-gray-300">
+                  <ul class="w-48">
+                    <li>
+                      <a
+                        class="block text-purple-500 font-bold text-base uppercase hover:text-purple-700 cursor-pointer"
+                        >Item</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block text-purple-500 font-bold text-base uppercase hover:text-purple-700 cursor-pointer"
+                        >Item 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block text-purple-500 font-bold text-base uppercase hover:text-purple-700 cursor-pointer"
+                        >Item 3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block text-purple-500 font-bold text-base uppercase hover:text-purple-700 cursor-pointer"
+                        >Item 4</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block text-purple-500 font-bold text-base uppercase hover:text-purple-700 cursor-pointer"
+                        >Item 5</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
           <li>
             <a
               href="#"
-              class="block py-2 pl-3 pr-4 text-white md:p-0 nav"
-              aria-current="page"
-              >Solutions
-              <fa icon="chevron-down" class="h-2 mx-2" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
+              class="block py-2 pl-3 pr-4 md:p-0"
+              :class="{ 'text-white': !showWhiteBg }"
               >Plaform
               <fa icon="chevron-down" class="h-2 mx-2" />
             </a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
+            <a
+              href="#"
+              class="block py-2 pl-3 pr-4 md:p-0"
+              :class="{ 'text-white': !showWhiteBg }"
               >Pricing</a
             >
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
+            <a
+              href="#"
+              class="block py-2 pl-3 pr-4 md:p-0"
+              :class="{ 'text-white': !showWhiteBg }"
               >Our Data</a
             >
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0"
+            <a
+              href="#"
+              class="block py-2 pl-3 pr-4 md:p-0"
+              :class="{ 'text-white': !showWhiteBg }"
               >Resources
               <fa icon="chevron-down" class="h-2 mx-2" />
             </a>
@@ -92,36 +143,24 @@
   </nav>
 </template>
 <script>
+import { ref } from "vue";
 export default {
-  // in data, I like to store a view object with all
-  // the values I need for a component to manage
-  // it's 'view' state - ie loading,
-  // or in this case, if the user is at the top of the page or not
-  data() {
-    return {
-      view: {
-        atTopOfPage: true,
-      },
-    };
-  },
+  setup() {
+    let showWhiteBg = ref(false);
 
-  // a beforeMount call to add a listener to the window
-  beforeMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
+    document.addEventListener("scroll", function () {
+      let bodyTopPositon = document.body.getBoundingClientRect().top;
 
-  methods: {
-    // the function to call when the user scrolls, added as a method
-    handleScroll() {
-      // when the user scrolls, check the pageYOffset
-      if (window.pageYOffset > 0) {
-        // user is scrolled
-        if (this.view.atTopOfPage) this.view.atTopOfPage = false;
+      if (bodyTopPositon < -158) {
+        showWhiteBg.value = true;
       } else {
-        // user is at top of page
-        if (!this.view.atTopOfPage) this.view.atTopOfPage = true;
+        showWhiteBg.value = false;
       }
-    },
+    });
+
+    return {
+      showWhiteBg,
+    };
   },
 };
 </script>
